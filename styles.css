@@ -1,0 +1,111 @@
+body {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://images.pexels.com/photos/13047960/pexels-photo-13047960.jpeg') no-repeat center center fixed,
+                linear-gradient(to bottom right, rgba(255, 223, 225, 0.8), rgba(255, 182, 193, 0.8)); /* Photo with gradient overlay */
+    background-size: cover, cover; /* Ensure both layers cover the viewport */
+    color: #333; /* Default text color */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    box-shadow: none; /* Remove shadow */
+    background: transparent; /* Fully transparent background */
+    border-radius: 10px;
+    margin-bottom: 0; /* No margin at the bottom */
+}
+
+/* Styling for headers without animation since JS handles word-by-word */
+header h1, #thank-you-section header h1 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Consistent font size */
+    color: white; /* White text for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better contrast */
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    opacity: 1; /* Ensure text is fully visible once added by JS */
+}
+
+.gif-container {
+    margin: 20px auto; /* Center the GIF container horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-container img {
+    border-radius: 10px;
+    width: 600px; /* Adjusted size for the first GIF */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Space above the buttons */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 10px; /* Space between buttons */
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 80px; /* Width of buttons */
+    height: 80px; /* Height of buttons */
+    font-family: 'Playfair Display', serif; /* Elegant font */
+}
+
+#yes-button {
+    background-color: white; /* White background */
+    color: black; /* Text color */
+    border-radius: 50px;
+    border: 2px solid #ff66b2; /* Pink border to match theme */
+}
+
+#no-button {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: 2px solid #ff66b2;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#thank-you-section {
+    text-align: center;
+    padding: 20px;
+}
+
+#thank-you-section .gif-container img {
+    width: 800px; /* Adjusted size for the penguin GIF */
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+    }
+
+    .gif-container img {
+        width: 300px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
